@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research — Your Name</title>
+  <title>Research — Ben Krotonsky</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ── NAV ─────────────────────────────────────────────────────── -->
 <nav>
-  <a href="index.html" class="nav-logo">Your<span>.</span>Name</a>
+  <a href="index.html" class="nav-logo">Ben<span>.</span>Krotonsky</a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="research.html">Research</a></li>
@@ -19,7 +18,7 @@
   </ul>
 </nav>
 
-<!-- ── PAGE HERO ───────────────────────────────────────────────── -->
+<!-- Page hero -->
 <div class="page-hero">
   <div class="page-hero-left">
     <div class="hero-anim"><span class="label">Academic Work</span></div>
@@ -29,212 +28,176 @@
   </div>
   <div class="page-hero-right hero-anim">
     <p class="body-text">
-      Placeholder description of your research focus and goals. Mention the broader
-      field, the two labs you're involved with, and what connects them. Keep it
-      to two or three concise sentences.
+      My research spans two active labs — bridging data-driven analysis with field-based
+      engineering to extract meaningful insight from physical systems. Replace this with
+      your own research overview.
     </p>
   </div>
 </div>
 
-<hr class="hr" />
+<hr class="hr" style="margin-bottom: 60px;" />
 
 <!-- ================================================================
-     LAB 01
+     VERTICAL ACCORDION STACK
      ================================================================ -->
-<div class="lab-block">
-  <div class="lab-header reveal">
-    <div class="lab-header-left">
-      <span class="label">Lab 01</span>
-      <h2>Lab One Full Name</h2>
-    </div>
-    <p class="lab-header-right muted">
-      A one or two sentence overview of what this lab studies, its principal
-      investigator, and your specific role or project within it. Replace this
-      with your actual lab information.
-    </p>
-  </div>
+<div class="entries-wrapper">
 
-  <div class="stagger-section">
+  <!-- ── Lab 1 ──────────────────────────────────────────────────── -->
+  <div class="entry-item reveal" id="entry-lab1">
 
-    <!-- Row 1: text | image -->
-    <div class="stagger-row reveal">
-      <div class="stagger-text">
-        <span class="tag">Background</span>
-        <h3>Research Context &amp; Motivation</h3>
-        <p>
-          Describe the problem space this research addresses. What gap in knowledge
-          or engineering challenge does this work target? Give the reader the context
-          they need to appreciate the work. Replace with your actual content.
-        </p>
+    <div class="entry-trigger" data-target="entry-lab1">
+      <div class="entry-thumb">
+        <img src="images/dasllogo.png" alt="Lab 1" />
+        <!--<div class="img-placeholder" style="min-height:160px; border:none; border-radius:0;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Lab Cover</span>
+        </div>-->
       </div>
-      <div class="stagger-img">
-        <!-- REPLACE: <img src="images/lab1-1.jpg" alt="Lab 1 image 1" /> -->
-        <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
+      <div class="entry-trigger-body">
+        <span class="entry-trigger-label">September, 2023 - Present</span>
+        <h3>Dynamic and Active Systems Lab - NAU</h3>
+        <p>Noninvasive high-throughput aerial thermal leakage detection for underground water pipelines</p>
+      </div>
+      <div class="entry-toggle">
+        <span class="entry-toggle-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 5v14M5 12h14"/>
           </svg>
-          <span>Lab 1 · Image 1</span>
-        </div>
+        </span>
       </div>
     </div>
 
-    <!-- Row 2: image | text (flipped) -->
-    <div class="stagger-row flip reveal">
-      <div class="stagger-text">
-        <span class="tag">Methodology</span>
-        <h3>Approach &amp; Techniques</h3>
-        <p>
-          Explain the methods, algorithms, instruments, or frameworks you use.
-          What makes your approach effective or novel? Reference specific tools,
-          software, or experimental setups where relevant. Replace with your content.
-        </p>
+    <div class="entry-detail">
+      <div class="entry-detail-inner">
+
+        <div class="stagger-row">
+          <div class="stagger-text">
+            <span class="tag">Background</span>
+            <h3>Research Context &amp; Motivation</h3>
+            <p>The water delivery infrastructure in Phoenix is degrading rapidly, particularly in Cast-In-Place Pipes, leading to frequent
+              leaks undetectable until they surface. As part of this lab, I was tasked with developing a simple temperature analysis workflow
+              into a statistically backed leak detection algorithm, powered by thermal drone imagery.
+            </p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/drone.jpg" alt="Lab 1 image 1" />
+            <!--<div class="img-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Lab 1 · Image 1</span></div>-->
+          </div>
+        </div>
+
+        <div class="stagger-row flip">
+          <div class="stagger-text">
+            <span class="tag">Methodology</span>
+            <h3>Approach &amp; Techniques</h3>
+            <p>I built the orthomosaic stitching workflow in Agisoft Metashape and refined the resulting DEM and orthomosaic accuracy. Using a DJI Mavic 3T, I then flew over 20 test missions to acquire thermal data of known leaks and establish POI detection criteria. These criteria were refined through moisture analyses at two field sites to characterize surface leak behavior and a statistical model to determine temperature variance from a relative population.
+            </p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/pipenetwork.png" alt="Lab 1 image 2" />
+            <!--<div class="img-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Lab 1 · Image 2</span></div>-->
+          </div>
+        </div>
+
+        <div class="stagger-row">
+          <div class="stagger-text">
+            <span class="tag">Outcomes</span>
+            <h3>Results &amp; Impact</h3>
+            <p>Preliminary results showed the POI identification algorithm detected known leaks without human interference at 66% accuracy. I also implemented a GUI to reduce user workload by refining the temperature analysis interface, and reduced total processing time by 37% versus the original workflow. In the future, I will conduct more test flights to further refine the algorithm, and assist the software team in creating a packaged product.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/tempprof.png" alt="Lab 1 image 3" />
+            <!--<div class="img-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Lab 1 · Image 3</span></div>-->
+          </div>
+        </div>
+
       </div>
-      <div class="stagger-img">
-        <!-- REPLACE: <img src="images/lab1-2.jpg" alt="Lab 1 image 2" /> -->
-        <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
+    </div>
+
+  </div><!-- /entry-lab1 -->
+
+  <!-- ── Lab 2 ──────────────────────────────────────────────────── -->
+  <div class="entry-item reveal reveal-delay-1" id="entry-lab2">
+
+    <div class="entry-trigger" data-target="entry-lab2">
+      <div class="entry-thumb">
+        <img src="images/match.png" alt="Lab 2" />
+        <!--<div class="img-placeholder" style="min-height:160px; border:none; border-radius:0;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Lab Cover</span>
+        </div>-->
+      </div>
+      <div class="entry-trigger-body">
+        <span class="entry-trigger-label">November, 2024 - Present</span>
+        <h3>match - LUH</h3>
+        <p>Geometry based stable pose algorithm for Aerodynamic Re-Orientation of Workpieces</p>
+      </div>
+      <div class="entry-toggle">
+        <span class="entry-toggle-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 5v14M5 12h14"/>
           </svg>
-          <span>Lab 1 · Image 2</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="entry-detail">
+      <div class="entry-detail-inner">
+
+        <div class="stagger-row">
+          <div class="stagger-text">
+            <span class="tag">Background</span>
+            <h3>Research Context &amp; Motivation</h3>
+            <p>Current methods of stable pose probabilistic quantification for workpieces requires extensive modelling or testing, and can be inaccurate if not evaluated under extremely large sample sizes. By analysing the geometry of the stable pose with respect to the entire workpiece, a more accurate and defendable probability can be determined in a fraction of the time. As part of DAAD RISE, I was tasked to create an algorithm to analyze the part's geometry and return probability estimates for each stable pose, which will be applied to optimize the orientation sequence in a manufacturing shute.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/shute.png" alt="Lab 2 image 1" />
+            <!--<div class="img-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Lab 2 · Image 1</span></div>-->
+          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Row 3: text | image -->
-    <div class="stagger-row reveal">
-      <div class="stagger-text">
-        <span class="tag">Outcomes</span>
-        <h3>Results &amp; Impact</h3>
-        <p>
-          Summarize your key findings, contributions, or deliverables. Are there
-          publications, presentations, or real-world applications? What did this
-          research reveal, and what comes next? Replace with your actual results.
-        </p>
-      </div>
-      <div class="stagger-img">
-        <!-- REPLACE: <img src="images/lab1-3.jpg" alt="Lab 1 image 3" /> -->
-        <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Lab 1 · Image 3</span>
+        <div class="stagger-row flip">
+          <div class="stagger-text">
+            <span class="tag">Methodology</span>
+            <h3>Approach &amp; Techniques</h3>
+            <p>The basis of my research is using the Centroid Solid Angle for each stable pose and finding it's proportion to the remaining poses. This is achieved by extracting the parts geometry, identifying valid resting positions and disregarding those that are unstable, and creating prisms between the centroid and the indices of the stable positions.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/csademo.png" alt="Lab 2 image 2" />
+            <!--<div class="img-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Lab 2 · Image 2</span></div>-->
+          </div>
         </div>
-      </div>
-    </div>
 
-  </div><!-- /stagger-section -->
-</div><!-- /lab-block -->
-
-<hr class="hr" />
-
-<!-- ================================================================
-     LAB 02
-     ================================================================ -->
-<div class="lab-block">
-  <div class="lab-header reveal">
-    <div class="lab-header-left">
-      <span class="label">Lab 02</span>
-      <h2>Lab Two Full Name</h2>
-    </div>
-    <p class="lab-header-right muted">
-      A one or two sentence overview of what this lab studies, its principal
-      investigator, and your specific role or project within it. Replace this
-      with your actual lab information.
-    </p>
-  </div>
-
-  <div class="stagger-section">
-
-    <div class="stagger-row reveal">
-      <div class="stagger-text">
-        <span class="tag">Background</span>
-        <h3>Research Context &amp; Motivation</h3>
-        <p>
-          Describe the problem this lab's research addresses. What engineering or
-          scientific challenge motivates this work? Give the reader the context to
-          appreciate why it matters. Replace with your actual content.
-        </p>
-      </div>
-      <div class="stagger-img">
-        <!-- REPLACE: <img src="images/lab2-1.jpg" alt="Lab 2 image 1" /> -->
-        <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Lab 2 · Image 1</span>
+        <div class="stagger-row">
+          <div class="stagger-text">
+            <span class="tag">Outcomes</span>
+            <h3>Results &amp; Future Work</h3>
+            <p>I developed a stable pose algorithm that reliably identifies every valid resting position and eliminates every unstable one — tested across 5 parts ranging from simple to complex geometries with 5–6 resting positions each, returning probability metrics with a mean absolute error of just 3.92% against simulation. I plan to continue developing the algorithm and expanding testing across additional workpiece geometries to further validate its performance.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/prob.png" alt="Lab 2 image 3" />
+            <!--<div class="img-placeholder"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Lab 2 · Image 3</span></div>-->
+          </div>
         </div>
+
       </div>
     </div>
 
-    <div class="stagger-row flip reveal">
-      <div class="stagger-text">
-        <span class="tag">Methodology</span>
-        <h3>Approach &amp; Techniques</h3>
-        <p>
-          Describe the specific methods, tools, and workflows used in this lab.
-          What is your individual contribution to the broader research effort?
-          Be specific and concrete. Replace with your actual methodology.
-        </p>
-      </div>
-      <div class="stagger-img">
-        <!-- REPLACE: <img src="images/lab2-2.jpg" alt="Lab 2 image 2" /> -->
-        <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Lab 2 · Image 2</span>
-        </div>
-      </div>
-    </div>
+  </div><!-- /entry-lab2 -->
 
-    <div class="stagger-row reveal">
-      <div class="stagger-text">
-        <span class="tag">Outcomes</span>
-        <h3>Results &amp; Future Work</h3>
-        <p>
-          What has this research produced so far? Describe deliverables, findings,
-          and future directions. What potential applications or next steps are you
-          working toward? Replace with your actual outcomes.
-        </p>
-      </div>
-      <div class="stagger-img">
-        <!-- REPLACE: <img src="images/lab2-3.jpg" alt="Lab 2 image 3" /> -->
-        <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Lab 2 · Image 3</span>
-        </div>
-      </div>
-    </div>
+</div><!-- /entries-wrapper -->
 
-  </div>
-</div>
-
-<!-- ── FOOTER ───────────────────────────────────────────────────── -->
 <footer>
-  <span class="footer-logo">Your<span style="color:var(--gold)">.</span>Name</span>
+  <span class="footer-logo">Ben<span style="color:var(--gold)">.</span>Krotonsky</span>
   <ul class="footer-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="research.html">Research</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <span class="footer-copy">© <span class="current-year"></span> Your Name</span>
+  <span class="footer-copy">© <span class="current-year"></span> Ben Krotonsky</span>
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/entries.js"></script>
 </body>
 </html>

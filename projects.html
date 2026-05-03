@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- ── NAV ─────────────────────────────────────────────────────── -->
 <nav>
   <a href="index.html" class="nav-logo">Ben<span>.</span>Krotonsky</a>
   <ul class="nav-links">
@@ -19,7 +18,7 @@
   </ul>
 </nav>
 
-<!-- ── PAGE HERO ───────────────────────────────────────────────── -->
+<!-- Page hero -->
 <div class="page-hero">
   <div class="page-hero-left">
     <div class="hero-anim"><span class="label">Engineering Work</span></div>
@@ -29,197 +28,147 @@
   </div>
   <div class="page-hero-right hero-anim">
     <p class="body-text">
-      Passionate about algorithms and mechanical engineering, I try to use my knowledge and abilities 
-      to bridge the gap between practical engineering concepts and data analysis
+      Passionate about algorithms and mechanical engineering, I try to use my knowledge
+      and abilities to bridge the gap between practical engineering concepts and data analysis.
     </p>
   </div>
 </div>
 
-<hr class="hr" />
+<hr class="hr" style="margin-bottom: 60px;" />
 
 <!-- ================================================================
-     PROJECT 01
+     VERTICAL ACCORDION STACK
      ================================================================ -->
-<div class="project-block">
-  <div class="lab-header reveal">
-    <div class="lab-header-left">
-      <span class="label">Heat Transfer</span>
-      <h2>Steady-State Pin Fin Analysis</h2>
-    </div>
-    <p class="lab-header-right muted">
-A generalized pin fin heat transfer algorithm that predicts thermal performance across varying cross-sectional geometries and end conditions, 
-enabling flexible, accurate analysis for thermal design applications using analytical fin efficiency modeling and parameterized boundary 
-condition formulations.
-    </p>
-  </div>
+<div class="entries-wrapper">
 
-  <div class="stagger-section">
+  <!-- ── Project 1 ─────────────────────────────────────────────── -->
+  <div class="entry-item reveal" id="entry-p1">
 
-    <div class="stagger-row reveal">
-      <div class="stagger-text">
-        <span class="tag">Background</span>
-        <h3>The Problem</h3>
-        <p>
-      Heat dissipation is a fundamental challenge in thermal engineering, where the geometry of a cooling surface can mean the difference 
-      between efficiency and failure. This project was motivated by the need to accurately predict heat transfer behavior across 
-      pin fins under varying cross-sectional profiles and boundary conditions.
-        </p>
+    <!-- Collapsed card trigger -->
+    <div class="entry-trigger" data-target="entry-p1">
+      <div class="entry-thumb">
+        <img src="images/nau.jpg" alt="Heat sink" />
       </div>
-      <div class="stagger-img">
-        <img src="images/heatsink.jpg" alt="Project 1 image 1" />
-        <!-- <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
+      <div class="entry-trigger-body">
+        <span class="entry-trigger-label">Heat Transfer</span>
+        <h3>Steady-State Pin Fin Analysis</h3>
+        <p>A generalized pin fin algorithm predicting thermal performance across varying cross-sectional geometries and boundary conditions.</p>
+      </div>
+      <div class="entry-toggle">
+        <span class="entry-toggle-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 5v14M5 12h14"/>
           </svg>
-          <span>Project 1 · Image 1</span>
-        </div> -->
+        </span>
       </div>
     </div>
 
-    <div class="stagger-row flip reveal">
-      <div class="stagger-text">
-        <span class="tag">Development</span>
-        <h3>How I Built It</h3>
-        <p>
-          I developed a generalized pin fin analysis algorithm capable of modeling conductive-convective heat transfer across arbitrary 
-          cross-sectional geometries — focused around conical and cylindrical fins — while accommodating a range of end conditions such as 
-          insulated tips, convective ends, and prescribed base temperatures. By performing nodal analysis across the fin with varying nodal 
-          counts until certain accuracy conditions were met, I was able to identify and quantify heat transfer throughout the fin.
-        </p>
+    <!-- Expanded detail -->
+    <div class="entry-detail">
+      <div class="entry-detail-inner">
+
+        <div class="stagger-row">
+          <div class="stagger-text">
+            <span class="tag">Background</span>
+            <h3>The Problem</h3>
+            <p>Heat dissipation is a fundamental challenge in thermal engineering, where the geometry of a cooling surface can mean the difference between efficiency and failure. This project was motivated by the need to accurately predict heat transfer behavior across pin fins under varying cross-sectional profiles and boundary conditions.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/heatsink.jpg" alt="Heat sink" />
+          </div>
+        </div>
+
+        <div class="stagger-row flip">
+          <div class="stagger-text">
+            <span class="tag">Development</span>
+            <h3>How I Built It</h3>
+            <p>I developed a generalized pin fin analysis algorithm capable of modeling conductive-convective heat transfer across arbitrary cross-sectional geometries — focused around conical and cylindrical fins — while accommodating a range of end conditions such as insulated tips, convective ends, and prescribed base temperatures. By performing nodal analysis with varying nodal counts until accuracy conditions were met, I was able to identify and quantify heat transfer throughout the fin.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/pinfin.png" alt="Pin fin diagram" />
+          </div>
+        </div>
+
+        <div class="stagger-row">
+          <div class="stagger-text">
+            <span class="tag">Outcome</span>
+            <h3>Results &amp; Learnings</h3>
+            <p>The algorithm produces heat transfer rate predictions and the fin's temperature distribution adaptable to any geometry-condition pairing, offering a flexible tool for thermal design optimization. Through this work, I deepened my understanding of nodal analysis and reinforced concepts from my studies. In the future, I will create a GUI for a better user experience.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/finresults.png" alt="Fin results" />
+          </div>
+        </div>
+
       </div>
-      <div class="stagger-img">
-        <img src="images/pinfin.png" alt="Project 1 image 2" />
-        <!--<div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
+    </div>
+
+  </div><!-- /entry-p1 -->
+
+  <!-- ── Project 2 ─────────────────────────────────────────────── -->
+  <div class="entry-item reveal reveal-delay-1" id="entry-p2">
+
+    <div class="entry-trigger" data-target="entry-p2">
+      <div class="entry-thumb">
+        <img src="images/fsaem.jpg" alt="FSAE car" />
+      </div>
+      <div class="entry-trigger-body">
+        <span class="entry-trigger-label">Engineering Design</span>
+        <h3>Formula SAE Front Wing</h3>
+        <p>An active aero system maximizing downforce on turns and minimizing drag on straights, pioneering NAU Formula SAE's aerodynamic package.</p>
+      </div>
+      <div class="entry-toggle">
+        <span class="entry-toggle-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 5v14M5 12h14"/>
           </svg>
-          <span>Project 1 · Image 2</span>
-        </div>-->
+        </span>
       </div>
     </div>
 
-    <div class="stagger-row reveal">
-      <div class="stagger-text">
-        <span class="tag">Outcome</span>
-        <h3>Results &amp; Learnings</h3>
-        <p>
-          The algorithm produces heat transfer rate predictions and the fin's temperature distribution adaptable to any geometry-condition 
-          pairing, offering a flexible tool for thermal design optimization. Through this work, I deepened my understanding of nodal analysis
-          and reinforced concepts I had learned through my studies. In the future, I will create a GUI for a better user experience.
-        </p>
-      </div>
-      <div class="stagger-img">
-        <img src="images/finresults.png" alt="Project 1 image 3" />
-        <!-- <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Project 1 · Image 3</span>
-        </div> -->
-      </div>
-    </div>
+    <div class="entry-detail">
+      <div class="entry-detail-inner">
 
-  </div>
-</div>
+        <div class="stagger-row">
+          <div class="stagger-text">
+            <span class="tag">Background</span>
+            <h3>The Problem</h3>
+            <p>The NAU Formula SAE team has no aerodynamic features, so implementing a front wing active aero system — along with additional aerodynamic features — can improve competition performance significantly by generating targeted downforce without an excessive drag penalty.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/fsae.jpg" alt="FSAE car" />
+          </div>
+        </div>
 
-<hr class="hr" />
+        <div class="stagger-row flip">
+          <div class="stagger-text">
+            <span class="tag">Development</span>
+            <h3>How I Built It</h3>
+            <p>As data analysis lead, I identified a suitable airfoil profile and determined optimal angle of attack for turns and straights. After choosing an airfoil, I performed an analysis of downforce and drag across varying angles of attack between 0 and 20 degrees. From this I determined the optimal angles of attack, and the resulting forces were applied to additional engineering analyses.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/forceresults.png" alt="Force results" />
+          </div>
+        </div>
 
-<!-- ================================================================
-     PROJECT 02
-     ================================================================ -->
-<div class="project-block">
-  <div class="lab-header reveal">
-    <div class="lab-header-left">
-      <span class="label">Engineering Design</span>
-      <h2>Formula SAE Front Wing</h2>
-    </div>
-    <p class="lab-header-right muted">
-      To improve the NAU Formula SAE team's aerodynamic package, my team and I designed a front wing active aero system to maximize
-      downforce on turns and minimize drag on straights
-    </p>
-  </div>
+        <div class="stagger-row">
+          <div class="stagger-text">
+            <span class="tag">Outcome</span>
+            <h3>Results &amp; Learnings</h3>
+            <p>The resulting wing produced an approximate downforce of 76 Newtons while turning and almost 0 Newtons of drag on straights. Implementing this system would provide a large performance increase for a team with no prior aerodynamic packages. This project allowed me to apply my knowledge of aerodynamics and fluid mechanics to a physical design intended for a real vehicle.</p>
+          </div>
+          <div class="stagger-img">
+            <img src="images/gaps.png" alt="GAPS wing design" />
+          </div>
+        </div>
 
-  <div class="stagger-section">
-
-    <div class="stagger-row reveal">
-      <div class="stagger-text">
-        <span class="tag">Background</span>
-        <h3>The Problem</h3>
-        <p>
-          The NAU Formula SAE team has no aerodynamic features, so implementing a front wing active aero system, along with
-          additional aerodynamic features, can improve competition performance 
-        </p>
-      </div>
-      <div class="stagger-img">
-        <img src="images/fsae.jpg" alt="Project 2 image 1" />
-        <!-- <div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Project 2 · Image 1</span>
-        </div> -->
       </div>
     </div>
 
-    <div class="stagger-row flip reveal">
-      <div class="stagger-text">
-        <span class="tag">Development</span>
-        <h3>How I Built It</h3>
-        <p>
-          As data analysis lead, I was tasked with identifying a suitable airfoil profile and determining optimal angle of attack for turns and straights.
-          After choosing an airfoil, I performed an analysis of downforce and drag across varying angles of attack between 0 and 20 degrees.
-          From this I determined the optimal angles of attack and the resulting forces were applied to additional engineering analyses.
-        </p>
-      </div>
-      <div class="stagger-img">
-        <img src="images/forceresults.png" alt="Project 2 image 2" />
-        <!--div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Project 2 · Image 2</span>
-        </div>-->
-      </div>
-    </div>
+  </div><!-- /entry-p2 -->
 
-    <div class="stagger-row reveal">
-      <div class="stagger-text">
-        <span class="tag">Outcome</span>
-        <h3>Results &amp; Learnings</h3>
-        <p>
-          The resulting wing produced an approximate downforce of 76 Newtons while turning and almost 0 Newtons of drag on straights.
-          Considering that the NAU Formula SAE team had no aerodynamic packages to begin, implementing this system would provide a large
-          performance increase. This project allowed me to apply my knowledge of aerodynamics and fluid mechanics to a physical design,
-          with the intention of implementing into a real vehicle.
-        </p>
-      </div>
-      <div class="stagger-img">
-        <img src="images/gaps.png" alt="Project 2 image 3" />
-        <!--div class="img-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="3" y="3" width="18" height="18" rx="1"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Project 2 · Image 3</span>
-        </div>-->
-      </div>
-    </div>
+</div><!-- /entries-wrapper -->
 
-  </div>
-</div>
-
-<!-- ── FOOTER ───────────────────────────────────────────────────── -->
 <footer>
   <span class="footer-logo">Ben<span style="color:var(--gold)">.</span>Krotonsky</span>
   <ul class="footer-links">
@@ -232,5 +181,6 @@ condition formulations.
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/entries.js"></script>
 </body>
 </html>

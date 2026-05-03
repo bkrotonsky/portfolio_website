@@ -759,3 +759,231 @@ a.contact-item-value:hover { color: var(--gold); }
   .profile-frame { width: 180px; height: 220px; }
   .home-cards-grid { grid-template-columns: 1fr; }
 }
+
+/* ================================================================
+   VERTICAL ACCORDION CARDS — stacked, click to expand
+   ================================================================ */
+
+.entries-wrapper {
+  padding: 0 52px 100px;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Collapsed card (the "button") ─────────────────────────── */
+.entry-item {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+  transition: border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.entry-item:hover {
+  border-color: rgba(201,169,110,0.3);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+}
+
+.entry-item.active {
+  border-color: rgba(201,169,110,0.45);
+  box-shadow: 0 12px 60px rgba(0,0,0,0.5);
+}
+
+/* The clickable card trigger */
+.entry-trigger {
+  display: grid;
+  grid-template-columns: 280px 1fr auto;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+  min-height: 160px;
+  position: relative;
+}
+
+/* Cover image on the left */
+.entry-thumb {
+  height: 160px;
+  overflow: hidden;
+  border-radius: 14px 0 0 14px;
+  flex-shrink: 0;
+  background: var(--surface);
+  position: relative;
+}
+
+.entry-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease);
+}
+
+.entry-item:hover .entry-thumb img,
+.entry-item.active .entry-thumb img {
+  transform: scale(1.06);
+}
+
+/* Placeholder thumb */
+.entry-thumb .img-placeholder {
+  min-height: 160px;
+  border: none;
+  border-radius: 0;
+}
+
+/* Gold overlay strip on thumb when active */
+.entry-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(201,169,110,0.12), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.entry-item.active .entry-thumb::after { opacity: 1; }
+
+/* Text section */
+.entry-trigger-body {
+  padding: 28px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.entry-trigger-label {
+  font-size: 0.63rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.entry-trigger-label::before {
+  content: '';
+  display: inline-block;
+  width: 16px; height: 1px;
+  background: var(--gold);
+}
+
+.entry-trigger-body h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.15;
+}
+
+.entry-trigger-body p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 520px;
+  margin-top: 4px;
+}
+
+/* Right: toggle icon */
+.entry-toggle {
+  padding: 0 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.entry-toggle-icon {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s, background 0.3s, transform 0.45s var(--ease);
+}
+
+.entry-item.active .entry-toggle-icon {
+  transform: rotate(45deg);
+  border-color: var(--gold);
+  background: var(--gold);
+}
+
+.entry-toggle-icon svg {
+  width: 14px; height: 14px;
+  color: var(--muted);
+  transition: color 0.3s;
+  flex-shrink: 0;
+}
+
+.entry-item.active .entry-toggle-icon svg { color: var(--bg); }
+
+/* ── Expanded detail body ───────────────────────────────────── */
+.entry-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.65s var(--ease);
+}
+
+.entry-item.active .entry-detail {
+  max-height: 2400px; /* large enough for any content */
+}
+
+.entry-detail-inner {
+  border-top: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+/* Mini header inside expanded panel */
+.entry-detail-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 32px 40px 24px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.entry-detail-header h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 300;
+  color: var(--white);
+}
+
+.entry-detail-desc {
+  font-size: 0.86rem;
+  color: var(--muted);
+  max-width: 400px;
+  line-height: 1.75;
+  flex-shrink: 0;
+}
+
+/* Stagger rows inside expanded panel — reuse existing classes,
+   just override the outer spacing to fit within the card */
+.entry-detail .stagger-row {
+  min-height: 320px;
+}
+
+.entry-detail .stagger-text {
+  padding: 40px 40px;
+}
+
+.entry-detail .stagger-row:last-child {
+  border-bottom: none;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .entries-wrapper { padding: 0 24px 72px; gap: 12px; }
+  .entry-trigger { grid-template-columns: 120px 1fr auto; min-height: 120px; }
+  .entry-thumb { height: 120px; border-radius: 12px 0 0 12px; }
+  .entry-trigger-body { padding: 20px 20px; }
+  .entry-toggle { padding: 0 20px; }
+  .entry-detail-header { padding: 24px 24px 20px; flex-direction: column; gap: 12px; }
+  .entry-detail .stagger-row { grid-template-columns: 1fr; min-height: auto; }
+  .entry-detail .stagger-text { padding: 28px 24px; border-right: none; border-top: 1px solid var(--border); }
+  .entry-detail .stagger-row .stagger-img { min-height: 220px; order: 1; }
+  .entry-detail .stagger-row .stagger-text { order: 2; }
+  .entry-detail .stagger-row.flip .stagger-text { order: 2; border-left: none; }
+  .entry-detail .stagger-row.flip .stagger-img { order: 1; }
+}
