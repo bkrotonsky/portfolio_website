@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Engineering student, researcher, builder." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav>
+  <div class="nav-logo">Your Name</div>
+  <ul class="nav-links">
+    <li><a href="#" data-page="home">Home</a></li>
+    <li><a href="#" data-page="research">Research</a></li>
+    <li><a href="#" data-page="projects">Projects</a></li>
+    <li><a href="#" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!-- ============================================================
+     HOME PAGE
+     ============================================================ -->
+<section id="home" class="page">
+
+  <div class="hero">
+
+    <!-- Left: intro -->
+    <div class="hero-left">
+
+      <!-- Profile picture -->
+      <div class="profile-img-wrap fade-in">
+        <!-- REPLACE src with your photo path, e.g. images/profile.jpg -->
+        <!-- <img src="images/profile.jpg" alt="Your Name" /> -->
+        <div class="placeholder-img">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          <span>Profile Photo</span>
+        </div>
+      </div>
+
+      <p class="hero-eyebrow fade-in">Engineer · Researcher · Builder</p>
+
+      <h1 class="hero-name fade-in">
+        Your<br /><em>Name</em>
+      </h1>
+
+      <p class="hero-title fade-in">Mechanical Engineering Student · University Name</p>
+
+      <p class="hero-bio fade-in">
+        A brief, compelling introduction about who you are. Mention your field of study,
+        current research focus, and what drives you. Keep it to two or three sentences —
+        enough to intrigue, not overwhelm.
+      </p>
+
+      <!-- LinkedIn -->
+      <div class="hero-socials fade-in">
+        <!-- REPLACE href with your LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener" class="linkedin-badge">
+          <svg class="linkedin-logo" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853
+            0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9
+            1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337
+            7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782
+            13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0
+            1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24
+            22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn Profile
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Right: dark panel -->
+    <div class="hero-right">
+      <div class="hero-right-inner">
+        <p class="hero-right-label">Currently</p>
+        <p class="hero-right-quote">
+          "Your research or current focus in one evocative sentence."
+        </p>
+        <div class="divider" style="background:var(--gray-500); margin: 0 auto;"></div>
+        <p style="font-size:0.85rem; color:var(--gray-300); max-width:240px; text-align:center; line-height:1.7;">
+          Institution or program name · City, Country · Year
+        </p>
+        <a href="#" data-goto="research" class="btn btn--white" style="margin-top:16px;">
+          View Research
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer strip on home -->
+  <footer>
+    <span class="footer-name">Your Name</span>
+    <span class="footer-copy">© <span id="year"></span> · All rights reserved</span>
+  </footer>
+
+</section>
+
+
+<!-- ============================================================
+     RESEARCH PAGE
+     ============================================================ -->
+<section id="research" class="page">
+
+  <!-- ── Lab 1 ──────────────────────────────────────────────── -->
+  <div class="lab-section">
+    <div class="lab-header">
+      <p class="label">Research · Lab 01</p>
+      <h2 class="section-title">Lab One Full Name</h2>
+      <div class="divider"></div>
+      <p style="max-width:560px; color:var(--gray-500); font-size:0.95rem; line-height:1.8;">
+        A one or two sentence overview of what this lab does, its mission, and your role within it.
+        Replace this with your actual lab description.
+      </p>
+    </div>
+
+    <!-- Staggered rows -->
+    <div class="stagger-block">
+
+      <!-- Row 1: text | image -->
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Section One</span>
+          <h3>Research Focus or Topic Title</h3>
+          <p>
+            Describe the first research topic, method, or finding in detail here.
+            This could be an overview of your experimental setup, the problem you're
+            solving, or the methodology you're using. Aim for 2–3 sentences.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <!-- REPLACE with: <img src="images/lab1-img1.jpg" alt="Description" /> -->
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Lab 1 · Image 1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: image | text -->
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Section Two</span>
+          <h3>Methods &amp; Approach</h3>
+          <p>
+            Describe your methods, tools, or algorithms here. What techniques are you
+            applying? What makes your approach novel or interesting? Replace with
+            your actual research description.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <!-- REPLACE with: <img src="images/lab1-img2.jpg" alt="Description" /> -->
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Lab 1 · Image 2</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: text | image -->
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Section Three</span>
+          <h3>Results &amp; Outcomes</h3>
+          <p>
+            Summarize your results, key takeaways, or the impact of this research.
+            What did you find? What's next? Replace this with your actual results
+            and conclusions.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <!-- REPLACE with: <img src="images/lab1-img3.jpg" alt="Description" /> -->
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Lab 1 · Image 3</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /stagger-block -->
+  </div><!-- /lab-section -->
+
+  <div class="lab-divider"></div>
+
+  <!-- ── Lab 2 ──────────────────────────────────────────────── -->
+  <div class="lab-section">
+    <div class="lab-header">
+      <p class="label">Research · Lab 02</p>
+      <h2 class="section-title">Lab Two Full Name</h2>
+      <div class="divider"></div>
+      <p style="max-width:560px; color:var(--gray-500); font-size:0.95rem; line-height:1.8;">
+        A one or two sentence overview of what this lab does, its mission, and your role within it.
+        Replace this with your actual lab description.
+      </p>
+    </div>
+
+    <div class="stagger-block">
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Section One</span>
+          <h3>Research Focus or Topic Title</h3>
+          <p>
+            Describe the first research topic, method, or finding for Lab 2 here.
+            Provide context about the problem domain and why it matters. Replace
+            with your actual research description.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Lab 2 · Image 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Section Two</span>
+          <h3>Methodology &amp; Tools</h3>
+          <p>
+            Describe the specific tools, software, hardware, or experimental setups
+            used in this lab's research. What is your individual contribution? Replace
+            with your actual content.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Lab 2 · Image 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Section Three</span>
+          <h3>Impact &amp; Future Work</h3>
+          <p>
+            What are the broader implications of this research? Are there publications,
+            presentations, or applications planned? Replace with your actual results
+            and future directions.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Lab 2 · Image 3</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-name">Your Name</span>
+    <span class="footer-copy">© <span class="yr"></span> · All rights reserved</span>
+  </footer>
+
+</section>
+
+
+<!-- ============================================================
+     PROJECTS PAGE
+     ============================================================ -->
+<section id="projects" class="page">
+
+  <!-- ── Project 1 ─────────────────────────────────────────── -->
+  <div class="project-section">
+    <div class="project-header">
+      <p class="label">Projects · 01</p>
+      <h2 class="section-title">Project One Title</h2>
+      <div class="divider"></div>
+      <p style="max-width:560px; color:var(--gray-500); font-size:0.95rem; line-height:1.8;">
+        A concise summary of what this project is, what problem it solves, and the technologies
+        or skills it showcases. Replace with your actual project overview.
+      </p>
+    </div>
+
+    <div class="stagger-block">
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Background</span>
+          <h3>The Problem</h3>
+          <p>
+            What challenge or problem does this project address? What motivated you to
+            work on it? Give the reader context before diving into your solution.
+            Replace with your actual project background.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Project 1 · Image 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Development</span>
+          <h3>Your Approach</h3>
+          <p>
+            How did you tackle this project? What tools, frameworks, or methods did
+            you use? Walk through the key design decisions and trade-offs. Replace
+            with your actual development description.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Project 1 · Image 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Outcome</span>
+          <h3>Results &amp; Learnings</h3>
+          <p>
+            What did the project achieve? Include metrics, demos, or links if applicable.
+            What did you learn, and how would you improve it next time? Replace with
+            your actual outcomes.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Project 1 · Image 3</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="lab-divider"></div>
+
+  <!-- ── Project 2 ─────────────────────────────────────────── -->
+  <div class="project-section">
+    <div class="project-header">
+      <p class="label">Projects · 02</p>
+      <h2 class="section-title">Project Two Title</h2>
+      <div class="divider"></div>
+      <p style="max-width:560px; color:var(--gray-500); font-size:0.95rem; line-height:1.8;">
+        A concise summary of what this project is, what problem it solves, and the technologies
+        or skills it showcases. Replace with your actual project overview.
+      </p>
+    </div>
+
+    <div class="stagger-block">
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Background</span>
+          <h3>The Problem</h3>
+          <p>
+            What challenge or problem does this project address? What motivated you to
+            work on it? Give the reader context before diving into your solution.
+            Replace with your actual project background.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Project 2 · Image 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Development</span>
+          <h3>Your Approach</h3>
+          <p>
+            How did you tackle this project? What tools, frameworks, or methods did
+            you use? Walk through the key design decisions and trade-offs. Replace
+            with your actual development description.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Project 2 · Image 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stagger-pair">
+        <div class="stagger-text">
+          <span class="tag">Outcome</span>
+          <h3>Results &amp; Learnings</h3>
+          <p>
+            What did the project achieve? Include metrics, demos, or links if applicable.
+            What did you learn, and how would you improve it next time? Replace with
+            your actual outcomes.
+          </p>
+        </div>
+        <div class="stagger-img">
+          <div class="placeholder-img">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            <span>Project 2 · Image 3</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-name">Your Name</span>
+    <span class="footer-copy">© <span class="yr"></span> · All rights reserved</span>
+  </footer>
+
+</section>
+
+
+<!-- ============================================================
+     CONTACT PAGE
+     ============================================================ -->
+<section id="contact" class="page">
+
+  <div class="contact-grid">
+
+    <!-- Left: contact details -->
+    <div class="contact-left">
+
+      <p class="label">Get in Touch</p>
+      <h2 class="section-title">Contact</h2>
+      <div class="divider"></div>
+
+      <p style="color:var(--gray-500); font-size:0.95rem; line-height:1.8; max-width:400px; margin-bottom:48px;">
+        Whether it's a research collaboration, project opportunity, or just a conversation —
+        feel free to reach out through any of the channels below.
+      </p>
+
+      <div class="contact-item">
+        <span class="contact-item-label">Email</span>
+        <!-- REPLACE with your email -->
+        <a href="mailto:your.email@university.edu" class="contact-item-value">
+          your.email@university.edu
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-item-label">Phone</span>
+        <!-- REPLACE with your phone number -->
+        <a href="tel:+10000000000" class="contact-item-value">
+          +1 (000) 000-0000
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-item-label">Location</span>
+        <span class="contact-item-value" style="cursor:default;">
+          City, Country
+        </span>
+      </div>
+
+    </div>
+
+    <!-- Right: links panel -->
+    <div class="contact-right">
+
+      <p class="label">Links</p>
+      <h3 style="font-family:var(--font-display); font-size:1.8rem; font-weight:700; margin-bottom:16px; color:var(--white);">
+        Find Me Online
+      </h3>
+      <div class="divider"></div>
+
+      <div class="contact-links">
+
+        <!-- LinkedIn -->
+        <!-- REPLACE href with your LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-item-label">LinkedIn</span>
+          <span class="contact-item-value" style="color:var(--white); display:flex; align-items:center; gap:8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853
+              0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9
+              1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337
+              7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782
+              13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0
+              1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24
+              22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            linkedin.com/in/your-profile →
+          </span>
+        </a>
+
+        <!-- Resume -->
+        <!-- REPLACE href with path to your resume PDF, e.g. files/resume.pdf -->
+        <a href="files/resume.pdf" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-item-label">Résumé</span>
+          <span class="contact-item-value" style="color:var(--white); display:flex; align-items:center; gap:8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            Download PDF →
+          </span>
+        </a>
+
+        <!-- University / Institution -->
+        <div class="contact-item">
+          <span class="contact-item-label">Institution</span>
+          <span class="contact-item-value" style="color:var(--white); cursor:default;">
+            University Name · Department Name
+          </span>
+        </div>
+
+      </div>
+
+      <div style="margin-top:48px;">
+        <a href="mailto:your.email@university.edu" class="btn btn--white">
+          Send an Email
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <span class="footer-name">Your Name</span>
+    <span class="footer-copy">© <span class="yr"></span> · All rights reserved</span>
+  </footer>
+
+</section>
+
+
+<script src="js/main.js"></script>
+<script>
+  // Set year in all footers
+  const yr = new Date().getFullYear();
+  document.getElementById('year').textContent = yr;
+  document.querySelectorAll('.yr').forEach(el => el.textContent = yr);
+</script>
+</body>
+</html>
