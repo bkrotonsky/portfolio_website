@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — Your Name</title>
+  <title>Projects — Ben Krotonsky</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <!-- ── NAV ─────────────────────────────────────────────────────── -->
 <nav>
-  <a href="index.html" class="nav-logo">Your<span>.</span>Name</a>
+  <a href="index.html" class="nav-logo">Ben<span>.</span>Krotonsky</a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="research.html">Research</a></li>
@@ -29,9 +29,8 @@
   </div>
   <div class="page-hero-right hero-anim">
     <p class="body-text">
-      A short overview of your projects — the kinds of problems you tackle,
-      the technologies you enjoy working with, and what distinguishes your
-      engineering approach. Replace with your own description.
+      Passionate about algorithms and mechanical engineering, I try to use my knowledge and abilities 
+      to bridge the gap between practical engineering concepts and data analysis
     </p>
   </div>
 </div>
@@ -44,13 +43,13 @@
 <div class="project-block">
   <div class="lab-header reveal">
     <div class="lab-header-left">
-      <span class="label">Project 01</span>
-      <h2>Project One Title</h2>
+      <span class="label">Heat Transfer</span>
+      <h2>Steady-State Pin Fin Analysis</h2>
     </div>
     <p class="lab-header-right muted">
-      A concise one or two sentence summary of the project — what it does,
-      what problem it solves, and the key technologies or methods involved.
-      Replace with your actual project overview.
+A generalized pin fin heat transfer algorithm that predicts thermal performance across varying cross-sectional geometries and end conditions, 
+enabling flexible, accurate analysis for thermal design applications using analytical fin efficiency modeling and parameterized boundary 
+condition formulations.
     </p>
   </div>
 
@@ -61,21 +60,21 @@
         <span class="tag">Background</span>
         <h3>The Problem</h3>
         <p>
-          What challenge or real-world need motivated this project? Provide the
-          context a reader needs to appreciate your solution. Keep it grounded
-          and specific. Replace with your actual project background.
+      Heat dissipation is a fundamental challenge in thermal engineering, where the geometry of a cooling surface can mean the difference 
+      between efficiency and failure. This project was motivated by the need to accurately predict heat transfer behavior across 
+      pin fins under varying cross-sectional profiles and boundary conditions.
         </p>
       </div>
       <div class="stagger-img">
-        <!-- REPLACE: <img src="images/proj1-1.jpg" alt="Project 1 image 1" /> -->
-        <div class="img-placeholder">
+        <img src="images/heatsink.jpg" alt="Project 1 image 1" />
+        <!-- <div class="img-placeholder">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
             <rect x="3" y="3" width="18" height="18" rx="1"/>
             <circle cx="8.5" cy="8.5" r="1.5"/>
             <path d="M21 15l-5-5L5 21"/>
           </svg>
           <span>Project 1 · Image 1</span>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -84,21 +83,22 @@
         <span class="tag">Development</span>
         <h3>How I Built It</h3>
         <p>
-          Walk through your approach: the tools, frameworks, algorithms, or design
-          decisions that shaped this project. Highlight what was technically
-          challenging and how you overcame it. Replace with your actual process.
+          I developed a generalized pin fin analysis algorithm capable of modeling conductive-convective heat transfer across arbitrary 
+          cross-sectional geometries — focused around conical and cylindrical fins — while accommodating a range of end conditions such as 
+          insulated tips, convective ends, and prescribed base temperatures. By performing nodal analysis across the fin with varying nodal 
+          counts until certain accuracy conditions were met, I was able to identify and quantify heat transfer throughout the fin.
         </p>
       </div>
       <div class="stagger-img">
-        <!-- REPLACE: <img src="images/proj1-2.jpg" alt="Project 1 image 2" /> -->
-        <div class="img-placeholder">
+        <img src="images/pinfin.png" alt="Project 1 image 2" />
+        <!--<div class="img-placeholder">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
             <rect x="3" y="3" width="18" height="18" rx="1"/>
             <circle cx="8.5" cy="8.5" r="1.5"/>
             <path d="M21 15l-5-5L5 21"/>
           </svg>
           <span>Project 1 · Image 2</span>
-        </div>
+        </div>-->
       </div>
     </div>
 
@@ -107,21 +107,21 @@
         <span class="tag">Outcome</span>
         <h3>Results &amp; Learnings</h3>
         <p>
-          What did this project produce? Describe measurable results, demos, or
-          deliverables. Reflect on what you learned and how you'd approach it
-          differently next time. Replace with your actual outcomes.
+          The algorithm produces heat transfer rate predictions and the fin's temperature distribution adaptable to any geometry-condition 
+          pairing, offering a flexible tool for thermal design optimization. Through this work, I deepened my understanding of nodal analysis
+          and reinforced concepts I had learned through my studies. In the future, I will create a GUI for a better user experience.
         </p>
       </div>
       <div class="stagger-img">
-        <!-- REPLACE: <img src="images/proj1-3.jpg" alt="Project 1 image 3" /> -->
-        <div class="img-placeholder">
+        <img src="images/finresults.png" alt="Project 1 image 3" />
+        <!-- <div class="img-placeholder">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
             <rect x="3" y="3" width="18" height="18" rx="1"/>
             <circle cx="8.5" cy="8.5" r="1.5"/>
             <path d="M21 15l-5-5L5 21"/>
           </svg>
           <span>Project 1 · Image 3</span>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -136,13 +136,12 @@
 <div class="project-block">
   <div class="lab-header reveal">
     <div class="lab-header-left">
-      <span class="label">Project 02</span>
-      <h2>Project Two Title</h2>
+      <span class="label">Engineering Design</span>
+      <h2>Formula SAE Front Wing</h2>
     </div>
     <p class="lab-header-right muted">
-      A concise one or two sentence summary of the project — what it does,
-      what problem it solves, and the key technologies or methods involved.
-      Replace with your actual project overview.
+      To improve the NAU Formula SAE team's aerodynamic package, my team and I designed a front wing active aero system to maximize
+      downforce on turns and minimize drag on straights
     </p>
   </div>
 
@@ -153,21 +152,20 @@
         <span class="tag">Background</span>
         <h3>The Problem</h3>
         <p>
-          What challenge or real-world need motivated this project? Provide the
-          context a reader needs to appreciate your solution. Keep it grounded
-          and specific. Replace with your actual project background.
+          The NAU Formula SAE team has no aerodynamic features, so implementing a front wing active aero system, along with
+          additional aerodynamic features, can improve competition performance 
         </p>
       </div>
       <div class="stagger-img">
-        <!-- REPLACE: <img src="images/proj2-1.jpg" alt="Project 2 image 1" /> -->
-        <div class="img-placeholder">
+        <img src="images/fsae.jpg" alt="Project 2 image 1" />
+        <!-- <div class="img-placeholder">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
             <rect x="3" y="3" width="18" height="18" rx="1"/>
             <circle cx="8.5" cy="8.5" r="1.5"/>
             <path d="M21 15l-5-5L5 21"/>
           </svg>
           <span>Project 2 · Image 1</span>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -176,21 +174,21 @@
         <span class="tag">Development</span>
         <h3>How I Built It</h3>
         <p>
-          Walk through your approach: the tools, frameworks, algorithms, or design
-          decisions that shaped this project. Highlight what was technically
-          challenging and how you overcame it. Replace with your actual process.
+          As data analysis lead, I was tasked with identifying a suitable airfoil profile and determining optimal angle of attack for turns and straights.
+          After choosing an airfoil, I performed an analysis of downforce and drag across varying angles of attack between 0 and 20 degrees.
+          From this I determined the optimal angles of attack and the resulting forces were applied to additional engineering analyses.
         </p>
       </div>
       <div class="stagger-img">
-        <!-- REPLACE: <img src="images/proj2-2.jpg" alt="Project 2 image 2" /> -->
-        <div class="img-placeholder">
+        <img src="images/forceresults.png" alt="Project 2 image 2" />
+        <!--div class="img-placeholder">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
             <rect x="3" y="3" width="18" height="18" rx="1"/>
             <circle cx="8.5" cy="8.5" r="1.5"/>
             <path d="M21 15l-5-5L5 21"/>
           </svg>
           <span>Project 2 · Image 2</span>
-        </div>
+        </div>-->
       </div>
     </div>
 
@@ -199,21 +197,22 @@
         <span class="tag">Outcome</span>
         <h3>Results &amp; Learnings</h3>
         <p>
-          What did this project produce? Describe measurable results, demos, or
-          deliverables. Reflect on what you learned and how you'd approach it
-          differently next time. Replace with your actual outcomes.
+          The resulting wing produced an approximate downforce of 76 Newtons while turning and almost 0 Newtons of drag on straights.
+          Considering that the NAU Formula SAE team had no aerodynamic packages to begin, implementing this system would provide a large
+          performance increase. This project allowed me to apply my knowledge of aerodynamics and fluid mechanics to a physical design,
+          with the intention of implementing into a real vehicle.
         </p>
       </div>
       <div class="stagger-img">
-        <!-- REPLACE: <img src="images/proj2-3.jpg" alt="Project 2 image 3" /> -->
-        <div class="img-placeholder">
+        <img src="images/gaps.png" alt="Project 2 image 3" />
+        <!--div class="img-placeholder">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
             <rect x="3" y="3" width="18" height="18" rx="1"/>
             <circle cx="8.5" cy="8.5" r="1.5"/>
             <path d="M21 15l-5-5L5 21"/>
           </svg>
           <span>Project 2 · Image 3</span>
-        </div>
+        </div>-->
       </div>
     </div>
 
@@ -222,14 +221,14 @@
 
 <!-- ── FOOTER ───────────────────────────────────────────────────── -->
 <footer>
-  <span class="footer-logo">Your<span style="color:var(--gold)">.</span>Name</span>
+  <span class="footer-logo">Ben<span style="color:var(--gold)">.</span>Krotonsky</span>
   <ul class="footer-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="research.html">Research</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <span class="footer-copy">© <span class="current-year"></span> Your Name</span>
+  <span class="footer-copy">© <span class="current-year"></span> Ben Krotonsky</span>
 </footer>
 
 <script src="js/main.js"></script>
